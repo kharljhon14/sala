@@ -1,0 +1,10 @@
+.input-text{
+    border: none;
+    border-bottom: 1px solid $color-light-grey;
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+
+    &:focus{
+        outline: none;
+    }
+}

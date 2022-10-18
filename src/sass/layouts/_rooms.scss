@@ -1,0 +1,53 @@
+.rooms {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &__card {
+      position: relative;
+      flex: 1;
+      height: 100vh;
+      background-color: $color-primary-dark;
+
+      &-content {
+         position: absolute;
+         width: 60%;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         color: $color-light;
+         text-align: center;
+      }
+
+      &-title {
+         margin-bottom: 2rem;
+         font-size: 3rem;
+         font-weight: 500;
+         text-transform: uppercase;
+      }
+
+      &-subtitle {
+         margin-bottom: 3rem;
+         font-size: 1.6rem;
+         font-weight: 200;
+         text-transform: capitalize;
+      }
+
+      &:hover {
+         .rooms__image {
+            clip-path: polygon(50% 50%, 100% 0, 50% 50%, 0% 100%);
+         }
+      }
+   }
+
+   &__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      transition: all 0.5s ease;
+   }
+}

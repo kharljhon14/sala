@@ -49,21 +49,100 @@
       </section>
       <section class="amenities">
          <div class="amenities__content">
-            <div class="amenities__content-informarion">
-               <h2 class="amenities__content-title">Carefully considered amenities</h2>
-               <p class="amenities__content-subtitle">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laboriosam doloremque debitis, corrupti quo possimus saepe ipsam deleniti! Et quam exercitationem beatae itaque
-                  reiciendis. Est eius quis quisquam voluptatem nisi!
-               </p>
-               <div class="amenities__content-cta">
-                  <button class="amenities__content-button btn">Make a reservation</button>
-               </div>
+            <h2 class="amenities__content-title">Carefully considered amenities</h2>
+            <p class="amenities__content-subtitle">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laboriosam doloremque debitis, corrupti quo possimus saepe ipsam deleniti! Et quam exercitationem beatae itaque reiciendis.
+               Est eius quis quisquam voluptatem nisi!
+            </p>
+            <div class="amenities__content-cta">
+               <button class="amenities__content-button btn">Make a reservation</button>
             </div>
          </div>
-         <div class="amenities__image">
-            <img src=<%=require("./images/amenities.jpg")%> alt="amenities" />
+         <div class="amenities__image"><img src=<%=require("./images/amenities.jpg")%> alt="amenities" /></div>
+      </section>
+      <section class="rooms">
+         <div class="rooms__card">
+            <div class="rooms__card-content">
+               <h2 class="rooms__card-title">Sala Solo</h2>
+               <p class="rooms__card-subtitle">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae error repellendus distinctio, ex ipsam numquam ducimus voluptates laborum enim, animi aliquid! Atque soluta recusandae
+                  dolor, similique tenetur corrupti quo sequi.
+               </p>
+               <a href="/" class="rooms__card-link link-border">Read more</a>
+            </div>
+            <img src=<%=require("./images/room-solo.jpg")%> alt="sala solo room" class="rooms__image">
+         </div>
+         <div class="rooms__card">
+            <div class="rooms__card-content">
+               <h2 class="rooms__card-title">Sala Couple</h2>
+               <p class="rooms__card-subtitle">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae error repellendus distinctio, ex ipsam numquam ducimus voluptates laborum enim, animi aliquid! Atque soluta recusandae
+                  dolor, similique tenetur corrupti quo sequi.
+               </p>
+               <a href="/" class="rooms__card-link link-border">Read more</a>
+            </div>
+            <img src=<%=require("./images/couple-room.jpg")%> alt="sala couple room" class="rooms__image">
+         </div>
+         <div class="rooms__card">
+            <div class="rooms__card-content">
+               <h2 class="rooms__card-title">Sala Family</h2>
+               <p class="rooms__card-subtitle">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae error repellendus distinctio, ex ipsam numquam ducimus voluptates laborum enim, animi aliquid! Atque soluta recusandae
+                  dolor, similique tenetur corrupti quo sequi.
+               </p>
+               <a href="/" class="rooms__card-link link-border">Read more</a>
+            </div>
+            <img src=<%=require("./images/family-room.jpg")%> alt="sala family room" class="rooms__image">
          </div>
       </section>
-      <script src="./index.js"></script>
+      <footer class="footer">
+         <div class="footer__content">
+            <div class="footer__content-links">
+               <h3 class="footer__content-title">Sala</h3>
+               <div class="footer__content-links-container">
+                  <a href="/" class="footer__content-link">The Company</a>
+                  <a href="/" class="footer__content-link">About</a>
+                  <a href="/" class="footer__content-link">Stories</a>
+                  <a href="/" class="footer__content-link">Press</a>
+                  <a href="/" class="footer__content-link">Reservation</a>
+               </div>
+               <div class="footer__content-links-container">
+                  <a href="/" class="footer__content-link">Legal</a>
+                  <a href="/" class="footer__content-link">Legal Notice</a>
+                  <a href="/" class="footer__content-link">Work With Us</a>
+                  <a href="/" class="footer__content-link">Cancel reservation</a>
+                  <a href="/" class="footer__content-link">Lost and Found</a>
+               </div>
+               <div class="footer__content-links-container">
+                  <a href="/" class="footer__content-link">Support</a>
+                  <a href="/" class="footer__content-link">Locations</a>
+                  <a href="/" class="footer__content-link">Terms</a>
+                  <a href="/" class="footer__content-link">Privacy</a>
+                  <a href="/" class="footer__content-link">info@sala.com</a>
+               </div>
+            </div>
+            <div class="footer__content-newsletter">
+               <h3 class="footer__content-newsletter-title">Newsletter</h3>
+               <form action="" class="footer__content-newsletter-form">
+                  <input class="input-text" type="text" placeholder="Enter your e-mail address" />
+                  <button class="btn" type="submit">Submit</button>
+               </form>
+            </div>
+         </div>
+         <div class="footer__legal">
+            <div class="footer__legal-terms">
+               <a href="" class="footer__legal-link">Terms and Coditions</a>
+               <a href="" class="footer__legal-link">Privacy Policy</a>
+               <a href="" class="footer__legal-link">Trademark and Copyright</a>
+            </div>
+            <p class="footer__legal-copy">&copy;2022 Sala All rights reserved.</p>
+            <div class="footer__legal-cookies">
+               <a href="" class="footer__legal-link">Cookies</a>
+               <a href="" class="footer__legal-link">Accessibility</a>
+               <a href="" class="footer__legal-link">Help</a>
+            </div>
+         </div>
+      </footer>
+      <script src="./index.js" type="script"></script>
    </body>
 </html>

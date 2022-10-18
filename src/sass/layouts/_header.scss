@@ -9,6 +9,7 @@
    right: 10rem;
    left: 10rem;
    z-index: 100;
+   transition: all .3s ease;
 
    &__logo {
       &-name {
@@ -33,4 +34,12 @@
          }
       }
    }
+}
+
+.active{
+   background-color: $color-primary-light;
+   border: none;
+   right: 0;
+   left: 0;
+   padding: 1rem 3rem;
 }

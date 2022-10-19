@@ -3,6 +3,11 @@
    align-items: center;
    height: 100vh;
 
+   @include responsive(tab-land){
+      flex-direction: column;
+      height: 100%;
+   }
+
    &__content {
       flex: 0 0 50%;
       height: 100%;
@@ -12,15 +17,15 @@
       justify-content: center;
       padding: 15rem;
 
-      & > *:not(:last-child){
-         margin-bottom: 2rem;
+      & > *:not(:last-child) {
+         margin-bottom: 2.5rem;
       }
 
-      &-title{
-        font-size: 4rem;
+      &-title {
+         font-size: 4rem;
       }
 
-      &-subtitle{
+      &-subtitle {
          font-size: 1.6rem;
       }
    }

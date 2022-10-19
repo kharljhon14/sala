@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=document.querySelector(".header");window.addEventListener("scroll",(()=>{window.scrollY>e.offsetHeight+900?e.classList.add("active"):e.classList.remove("active")}))})();

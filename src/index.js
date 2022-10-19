@@ -7,4 +7,29 @@ const fixNav = () => {
    else header.classList.remove("active");
 };
 
-window.addEventListener("scroll", fixNav);
+const blocks = document.querySelectorAll(".block");
+const triggerBottom = (window.innerHeight / 5) * 4;
+
+const scrollAnimation = () => {
+   blocks.forEach((block) => {
+      const top = block.getBoundingClientRect().top;
+
+      if (top < triggerBottom) block.classList.add("show");
+   });
+};
+
+scrollAnimation();
+
+window.addEventListener("scroll", () => {
+   fixNav();
+   scrollAnimation();
+});
+
+const burgerBtn = document.querySelector(".header__burger");
+const navigation = document.querySelector(".header__navigation");
+const headerCta = document.querySelector(".header__cta");
+
+burgerBtn.addEventListener("click", () => {
+   navigation.classList.toggle("show-header");
+   headerCta.classList.toggle("show-header");
+});

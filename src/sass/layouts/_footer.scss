@@ -9,6 +9,13 @@
       margin: 0 10rem;
       border-bottom: 2px solid $color-light-grey;
 
+      @include responsive(tab-land) {
+         flex-direction: column;
+         justify-content: center;
+         padding: 5rem 0;
+         margin: 0 5rem;
+      }
+
       &-links {
          display: flex;
          justify-content: space-between;
@@ -48,12 +55,21 @@
          justify-content: center;
          height: 100%;
 
+         @include responsive(tab-land) {
+            margin-top: 10rem;
+            align-items: center;
+         }
+
          &-title {
             font-size: 2rem;
             align-items: flex-start;
             margin-bottom: 2rem;
          }
          &-form {
+            @include responsive(tab-land) {
+               display: flex;
+               flex-direction: column;
+            }
             & input {
                margin-bottom: 2rem;
                width: 35rem;
@@ -70,10 +86,17 @@
       font-size: 1.2rem;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       text-align: center;
       padding: 2rem 0;
-      text-align: center;
+
+      @include responsive(tab-land) {
+         flex-direction: column;
+
+         &> *{
+            padding: 2rem 0;
+         }
+      }
 
       & a {
          font-size: 1.3rem;
@@ -81,6 +104,19 @@
          color: $color-primary-dark;
       }
 
+      &-terms {
+         margin-right: auto;
+         @include responsive(tab-land) {
+            margin: 0;
+         }
+      }
+
+      &-copy {
+         margin-right: 2rem;
+         @include responsive(tab-land) {
+            margin: 0;
+         }
+      }
 
       &-terms,
       &-cookies {

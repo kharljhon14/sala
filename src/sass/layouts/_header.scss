@@ -9,7 +9,17 @@
    right: 10rem;
    left: 10rem;
    z-index: 100;
-   transition: all .3s ease;
+   transition: all 0.3s ease;
+   animation: fadein 1s 1s backwards;
+
+   @include responsive(tab-land) {
+      flex-direction: column;
+      right: 0rem;
+      left: 0rem;
+      background-color: $color-primary-light;
+      padding: 1rem 3rem;
+      border: none;
+   }
 
    &__logo {
       &-name {
@@ -21,25 +31,79 @@
    }
 
    &__navigation {
+      @include responsive(tab-land) {
+         width: 100%;
+         height: 0;
+         overflow: hidden;
+      }
       &-list {
          list-style: none;
          display: flex;
          align-items: center;
          justify-content: center;
+         @include responsive(tab-land) {
+            display: block;
+            width: inherit;
+            text-align: center;
+         }
       }
 
       &-item {
          &:not(:last-child) {
             margin-right: 5rem;
+            @include responsive(tab-land) {
+               margin-right: 0;
+            }
          }
+
+         @include responsive(tab-land) {
+            padding: 2rem;
+         }
+      }
+   }
+
+   &__cta {
+      @include responsive(tab-land) {
+         margin-top: 3rem;
+         display: none;
+      }
+   }
+
+   &__burger {
+      position: absolute;
+      top: 1.5rem;
+      right: 5rem;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer;
+      z-index: 100;
+
+      @include responsive(tab-land) {
+         display: flex;
+      }
+
+      &-line {
+         width: 100%;
+         height: 0.2rem;
+         background-color: $color-light;
       }
    }
 }
 
-.active{
+.active {
    background-color: $color-primary-light;
    border: none;
    right: 0;
    left: 0;
    padding: 1rem 3rem;
+}
+
+.show-header {
+   margin-top: 2rem;
+   height: auto;
+   display: block;
 }

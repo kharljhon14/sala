@@ -30,6 +30,11 @@
          <div class="header__cta">
             <button class="header__cta-button btn">Make a reservation</button>
          </div>
+         <div class="header__burger">
+            <div class="header__burger-line"></div>
+            <div class="header__burger-line"></div>
+            <div class="header__burger-line"></div>
+         </div>
       </header>
       <section class="hero">
          <div class="hero__content">
@@ -39,15 +44,21 @@
                commodi praesentium officiis dignissimos ratione. Similique. lorem
             </p>
          </div>
+         <div class="hero__pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="32" viewBox="0 0 32 32">
+               <path d="M32 16c0-8.837-7.163-16-16-16s-16 7.163-16 16 7.163 16 16 16 16-7.163 16-16zM3 16c0-7.18 5.82-13 13-13s13 5.82 13 13-5.82 13-13 13-13-5.82-13-13z" />
+               <path d="M9.914 11.086l-2.829 2.829 8.914 8.914 8.914-8.914-2.828-2.828-6.086 6.086z" />
+            </svg>
+         </div>
       </section>
-      <section class="concept">
+      <section class="concept block">
          <h1 class="concept__title">A self-service concept</h1>
          <p class="concept__subtitle">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum amet perferendis asperiores placeat neque, laboriosam tempore! Molestias dolorum totam, minima fuga non libero distinctio
             odio consequatur esse earum voluptatum veritatis!
          </p>
       </section>
-      <section class="amenities">
+      <section class="amenities block">
          <div class="amenities__content">
             <h2 class="amenities__content-title">Carefully considered amenities</h2>
             <p class="amenities__content-subtitle">
@@ -60,7 +71,7 @@
          </div>
          <div class="amenities__image"><img src=<%=require("./images/amenities.jpg")%> alt="amenities" /></div>
       </section>
-      <section class="rooms">
+      <section class="rooms block">
          <div class="rooms__card">
             <div class="rooms__card-content">
                <h2 class="rooms__card-title">Sala Solo</h2>
@@ -68,7 +79,7 @@
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae error repellendus distinctio, ex ipsam numquam ducimus voluptates laborum enim, animi aliquid! Atque soluta recusandae
                   dolor, similique tenetur corrupti quo sequi.
                </p>
-               <a href="/" class="rooms__card-link link-border">Read more</a>
+               <a href="/" class="rooms__card-link link-border">Make a reservation</a>
             </div>
             <img src=<%=require("./images/room-solo.jpg")%> alt="sala solo room" class="rooms__image">
          </div>
@@ -79,7 +90,7 @@
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae error repellendus distinctio, ex ipsam numquam ducimus voluptates laborum enim, animi aliquid! Atque soluta recusandae
                   dolor, similique tenetur corrupti quo sequi.
                </p>
-               <a href="/" class="rooms__card-link link-border">Read more</a>
+               <a href="/" class="rooms__card-link link-border">Make a reservation</a>
             </div>
             <img src=<%=require("./images/couple-room.jpg")%> alt="sala couple room" class="rooms__image">
          </div>
@@ -90,12 +101,24 @@
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae error repellendus distinctio, ex ipsam numquam ducimus voluptates laborum enim, animi aliquid! Atque soluta recusandae
                   dolor, similique tenetur corrupti quo sequi.
                </p>
-               <a href="/" class="rooms__card-link link-border">Read more</a>
+               <a href="/" class="rooms__card-link link-border">Make a reservation</a>
             </div>
             <img src=<%=require("./images/family-room.jpg")%> alt="sala family room" class="rooms__image">
          </div>
       </section>
-      <footer class="footer">
+      <section class="amenities block">
+         <div class="amenities__image"><img src=<%=require("./images/amenities-2.jpg")%> alt="amenities" /></div>
+
+         <div class="amenities__content">
+            <h2 class="amenities__content-title">About the Sala Hotel</h2>
+            <p class="amenities__content-subtitle">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laboriosam doloremque debitis, corrupti quo possimus saepe ipsam deleniti! Et quam exercitationem beatae itaque reiciendis.
+               Est eius quis quisquam voluptatem nisi Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolores nostrum itaque non, commodi eveniet repellat neque nobis facilis
+               consequuntur perspiciatis exercitationem veniam necessitatibus dolorum alias fugit assumenda eaque culpa!
+            </p>
+         </div>
+      </section>
+      <footer class="footer block">
          <div class="footer__content">
             <div class="footer__content-links">
                <h3 class="footer__content-title">Sala</h3>

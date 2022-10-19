@@ -25,6 +25,7 @@
       letter-spacing: 0.6rem;
       margin-bottom: 2rem;
       text-transform: uppercase;
+      animation: fadein-left 1s backwards;
    }
 
    &__subtitle {
@@ -32,5 +33,20 @@
       font-size: 1.6rem;
       font-weight: 400;
       line-height: 3rem;
+      animation: fadein-right 1s .5s backwards;
+
+   }
+
+   &__pointer {
+      position: absolute;
+      bottom: 5rem;
+      animation: hover-down 1s infinite, fadein 1s 1.4s backwards;
+      
+      & svg {
+         fill: $color-light;
+         width: 5rem;
+         height: 5rem;
+      }
+      
    }
 }

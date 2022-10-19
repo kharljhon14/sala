@@ -3,11 +3,19 @@
    align-items: center;
    justify-content: center;
 
+   @include responsive(large-phone) {
+      display: block;
+   }
+
    &__card {
       position: relative;
       flex: 1;
       height: 100vh;
       background-color: $color-primary-dark;
+
+      @include responsive(large-phone) {
+         height: 70vh;
+      }
 
       &-content {
          position: absolute;
@@ -17,6 +25,9 @@
          transform: translate(-50%, -50%);
          color: $color-light;
          text-align: center;
+         @include responsive(tab-port) {
+            width: 90%;
+         }
       }
 
       &-title {

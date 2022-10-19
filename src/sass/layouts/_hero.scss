@@ -26,6 +26,14 @@
       margin-bottom: 2rem;
       text-transform: uppercase;
       animation: fadein-left 1s backwards;
+
+      @include responsive(tab-port) {
+         font-size: 5rem;
+      }
+
+      @include responsive(large-phone) {
+         font-size: 4.5rem;
+      }
    }
 
    &__subtitle {
@@ -33,7 +41,7 @@
       font-size: 1.6rem;
       font-weight: 400;
       line-height: 3rem;
-      animation: fadein-right 1s .5s backwards;
+      animation: fadein-right 1s 0.5s backwards;
 
    }
 
@@ -41,12 +49,11 @@
       position: absolute;
       bottom: 5rem;
       animation: hover-down 1s infinite, fadein 1s 1.4s backwards;
-      
+
       & svg {
          fill: $color-light;
          width: 5rem;
          height: 5rem;
       }
-      
    }
 }

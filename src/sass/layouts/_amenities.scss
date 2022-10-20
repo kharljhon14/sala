@@ -17,6 +17,10 @@
       justify-content: center;
       padding: 15rem;
 
+      @include responsive(tiny-phone) {
+         padding: 15rem 5rem;
+       }
+
       & > *:not(:last-child) {
          margin-bottom: 2.5rem;
       }

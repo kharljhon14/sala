@@ -24,11 +24,12 @@ html {
    }
 
    @include responsive(small-phone) {
-      font-size: 35%;
+      // font-size: 40%;
    }
    overflow-x: hidden;
 }
 
 body {
    font-family: "Poppins", sans-serif;
+   overflow-x: inherit;
 }

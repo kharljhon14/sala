@@ -43,9 +43,14 @@
             }
          }
       }
+      
       &-title {
          align-self: flex-start;
          font-size: 2rem;
+
+         @include responsive(tiny-phone) {
+            display: none;
+         }
       }
 
       &-newsletter {
@@ -93,7 +98,7 @@
       @include responsive(tab-land) {
          flex-direction: column;
 
-         &> *{
+         & > * {
             padding: 2rem 0;
          }
       }

@@ -21,6 +21,9 @@
       @include responsive(large-phone) {
          font-size: 4.5rem;
       }
+      @include responsive(large-phone) {
+        padding: 0 20rem;
+      }
    }
 
    &__subtitle {
@@ -28,5 +31,8 @@
       font-size: 1.6rem;
       font-weight: 400;
       line-height: 3rem;
+      @include responsive(large-phone) {
+         padding: 0 12rem;
+       }
    }
 }
